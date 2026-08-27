@@ -1,12 +1,19 @@
 export const property = {
-  address: "106 & 108 Ashley Court",
+  address: "108 Ashley Court, Hubley, NS",
+  propertyName: "Ashley Court Estate",
   tagline: "Elegant Living with Backyard Suite",
 
   agent: {
     name: "Chris Musial",
-    phone: "902-876-8000",
-    email: "chris@realestate.com",
-    photo: "/images/agent.jpg",
+    credentials: "B.A., CELTA, REALTOR®",
+    phone: "(902) 876-8000",
+    email: "Musial.Chris@gmail.com",
+    photo: "/images/agent.jpg", // Add agent photo here
+    logoUrl: "/images/remax-logo.png", // Add RE/MAX logo here
+    brokerage: "NOVA",
+    officeAddress: "5943 Spring Garden Road,",
+    officeCity: "Halifax, NS B3H 1Y4",
+    website: "www.ChrisMusial.realtor",
   },
 
   hero: "/images/005-Exterior-View-1-106-a-108-Ashley-Court.jpg",
@@ -118,14 +125,9 @@ export const property = {
   ],
 
   location: {
-    lat: 44.6488,
-    lng: -63.5752,
-    address: "106 & 108 Ashley Court, Halifax, NS",
-    // To get the correct embed URL:
-    // 1. Go to Google Maps and search for the address
-    // 2. Click "Share" -> "Embed a map"
-    // 3. Copy the src URL from the iframe code
-    // Using search query format (no API key needed):
+    lat: 44.6628,
+    lng: -63.7921,
+    address: "108 Ashley Court, Hubley, NS B3Z 1P6",
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2837.7800783712087!2d-63.7920668!3d44.66284470000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b598b347d60a777%3A0x459870d518d2174d!2s108%20Ashley%20Ct%2C%20Hubley%2C%20NS%20B3Z%201P6!5e0!3m2!1sen!2sca!4v1787640339396!5m2!1sen!2sca",
   },
 
