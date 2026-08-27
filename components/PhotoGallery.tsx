@@ -3,13 +3,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Camera, X, ChevronLeft, ChevronRight, Grid3X3 } from "lucide-react";
 import { property } from "@/config/property";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 const INITIAL_DISPLAY_COUNT = 12;
 
@@ -71,9 +70,8 @@ export default function PhotoGallery() {
         {/* Main Carousel */}
         <div className="relative rounded-2xl overflow-hidden shadow-lg mb-6">
           <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation]}
             navigation
-            pagination={{ clickable: true }}
             className="aspect-[16/10] gallery-swiper"
           >
             {property.photos.map((photo, index) => (

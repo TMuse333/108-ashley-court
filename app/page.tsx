@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import VirtualTour from "@/components/VirtualTour";
+// import VirtualTour from "@/components/VirtualTour";
 import PhotoGallery from "@/components/PhotoGallery";
 import VideoSection from "@/components/VideoSection";
 import Floorplan from "@/components/Floorplan";
@@ -13,20 +13,14 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <VirtualTour />
+        {/* <VirtualTour /> */}
         <PhotoGallery />
         <VideoSection />
         <Floorplan />
         <LocationMap />
         <ContactForm />
       </main>
-      <footer className="bg-slate-900 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-slate-400 text-sm">
-            Property Tour Template
-          </p>
-        </div>
-      </footer>
+      <footer className="bg-slate-900 py-4" />
     </>
   );
 }
