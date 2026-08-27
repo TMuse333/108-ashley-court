@@ -73,8 +73,11 @@ export default function ContactForm() {
             </h2>
 
             {/* Credentials */}
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-gray-600 mb-1">
               {agent.credentials || "B.A., CELTA, REALTOR®"}
+            </p>
+            <p className="text-lg text-gray-600 mb-6">
+              RE/MAX NOVA
             </p>
 
             {/* Phone */}
