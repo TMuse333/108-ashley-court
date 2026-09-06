@@ -1,6 +1,6 @@
 export const property = {
   address: "108 Ashley Court, Hubley, NS",
-  propertyName: "Ashley Court Estate",
+  propertyName: "Pheasant Cove Estate",
   tagline: "Elegant Living with Backyard Suite",
 
   agent: {
