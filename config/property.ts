@@ -114,8 +114,8 @@ export const property = {
     "/images/415-Backyard-Suite-Garage-2.jpg",
   ],
 
-  // Set to empty string if no video, or add YouTube embed URL
-  videoUrl: "",
+  // Video embed URL (YouTube, Google Drive /preview, etc.)
+  videoUrl: "https://drive.google.com/file/d/1y7K9cRRJU4PCe3T2YfIs-RIrKhDxUubU/preview",
 
   floorplans: [
     "/images/zzz106-floor-plan-1st-floor.jpg",

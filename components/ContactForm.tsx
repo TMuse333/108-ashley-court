@@ -41,8 +41,18 @@ export default function ContactForm() {
 
           {/* Agent Info - Right Side */}
           <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-            {/* RE/MAX Logo Placeholder */}
-            <div className="mb-4">
+            {/* Agent Name */}
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-1">
+              {agent.name}
+            </h2>
+
+            {/* Credentials */}
+            <p className="text-lg text-gray-600 mb-6">
+              {agent.credentials || "B.A., CELTA, REALTOR®"}
+            </p>
+
+            {/* RE/MAX Logo */}
+            <div className="mb-1">
               {agent.logoUrl ? (
                 <Image
                   src={agent.logoUrl}
@@ -53,7 +63,6 @@ export default function ContactForm() {
                 />
               ) : (
                 <div className="flex items-center gap-2">
-                  {/* Balloon icon placeholder */}
                   <div className="w-10 h-12 bg-gradient-to-b from-red-600 via-white to-blue-600 rounded-full" />
                   <div>
                     <p className="text-3xl font-black tracking-tight">RE/MAX</p>
@@ -62,45 +71,35 @@ export default function ContactForm() {
               )}
             </div>
 
-            {/* NOVA */}
+            {/* Brokerage Name */}
             <p className="text-2xl font-bold text-red-600 mb-2">
               {agent.brokerage || "NOVA"}
             </p>
 
-            {/* Agent Name */}
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-1">
-              {agent.name}
-            </h2>
-
-            {/* Credentials */}
-            <p className="text-lg text-gray-600 mb-1">
-              {agent.credentials || "B.A., CELTA, REALTOR®"}
-            </p>
-            <p className="text-lg text-gray-600 mb-6">
-              RE/MAX NOVA
-            </p>
+            {/* Address */}
+            <div className="text-gray-700 mb-6">
+              <p>{agent.officeAddress || "5943 Spring Garden Road,"}</p>
+              <p>{agent.officeCity || "Halifax, NS B3H 1Y4"}</p>
+            </div>
 
             {/* Phone */}
             <a
               href={`tel:${agent.phone}`}
-              className="text-3xl md:text-4xl font-bold text-red-600 hover:text-red-700 transition-colors mb-2"
+              className="text-3xl md:text-4xl font-bold text-red-600 hover:text-red-700 transition-colors mb-2 block"
             >
               {agent.phone}
             </a>
 
             {/* Email */}
-            <a
-              href={`mailto:${agent.email}`}
-              className="text-xl text-blue-600 hover:text-blue-700 transition-colors mb-6"
-            >
-              {agent.email}
-            </a>
-
-            {/* Address */}
-            <div className="text-gray-700 mb-2">
-              <p>{agent.officeAddress || "5943 Spring Garden Road,"}</p>
-              <p>{agent.officeCity || "Halifax, NS B3H 1Y4"}</p>
-            </div>
+            <p className="text-xl mb-6">
+              <span className="text-gray-700">Email </span>
+              <a
+                href={`mailto:${agent.email}`}
+                className="text-blue-600 hover:text-blue-700 transition-colors"
+              >
+                {agent.email}
+              </a>
+            </p>
 
             {/* Website */}
             {agent.website && (
@@ -108,7 +107,7 @@ export default function ContactForm() {
                 href={agent.website.startsWith("http") ? agent.website : `https://${agent.website}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors mb-6"
+                className="text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors"
               >
                 {agent.website}
               </a>
