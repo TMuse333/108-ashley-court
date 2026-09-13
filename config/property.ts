@@ -115,7 +115,7 @@ export const property = {
   ],
 
   // Video embed URL (YouTube, Google Drive /preview, etc.)
-  videoUrl: "https://drive.google.com/file/d/1y7K9cRRJU4PCe3T2YfIs-RIrKhDxUubU/preview",
+  videoUrl: "https://drive.google.com/file/d/1wwOa18eBSl_rKIsnT7r9yNEsVdqmGQTo/preview",
 
   floorplans: [
     "/images/zzz106-floor-plan-1st-floor.jpg",

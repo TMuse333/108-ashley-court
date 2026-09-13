@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 const navLinks = [
   { href: "#photos", label: "Photos Video" },
@@ -10,6 +10,8 @@ const navLinks = [
   { href: "#location", label: "Location" },
   { href: "#contact", label: "Contact" },
 ];
+
+const BROCHURE_URL = "/Pheasant-Cove-Estate-Brochure.pdf";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +39,14 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
+            <a
+              href={BROCHURE_URL}
+              download="Pheasant-Cove-Estate-Brochure.pdf"
+              className="px-6 py-2 rounded-full bg-red-500 hover:bg-red-600 text-white text-sm font-medium transition-all border border-red-400/60 hover:border-red-300/80 shadow-sm flex items-center gap-2"
+            >
+              <Download className="w-4 h-4" />
+              Brochure
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -62,6 +72,14 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
+            <a
+              href={BROCHURE_URL}
+              download="Pheasant-Cove-Estate-Brochure.pdf"
+              className="flex items-center justify-center gap-2 w-full px-4 py-3 text-white bg-red-500 hover:bg-red-600 rounded-full transition-colors"
+            >
+              <Download className="w-4 h-4" />
+              Download Brochure
+            </a>
           </div>
         </div>
       )}
