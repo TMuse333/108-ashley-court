@@ -10,7 +10,7 @@ export const property = {
     email: "Musial.Chris@gmail.com",
     photo: "/images/agent.jpg", // Add agent photo here
     logoUrl: "/images/remax-logo.png", // Add RE/MAX logo here
-    brokerage: "NOVA",
+    brokerage: "RE/MAX NOVA",
     officeAddress: "5943 Spring Garden Road,",
     officeCity: "Halifax, NS B3H 1Y4",
     website: "www.ChrisMusial.realtor",
